@@ -26,5 +26,5 @@ db.once('open', () => {
       description: rawData.results[i].description,
     })
   }
-  console.log('seeds  for 迴圈結束')
+  console.log('seeds - for 迴圈結束')
 })
