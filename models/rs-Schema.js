@@ -24,4 +24,4 @@ const restaurantSchema = new Schema({
   },
 })
 
-module.export = mongoose.model('Restaurant', restaurantSchema)
+module.exports = mongoose.model('Restaurant', restaurantSchema)

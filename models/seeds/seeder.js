@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+// 載入 schema 設定過的 model
 const Restaurant = require('../rs-Schema')
 const rawData = require('../../raw_restaurant.json')
 
@@ -15,7 +16,7 @@ db.on('error', () => {
 
 db.once('open', () => {
   //  用 for 迴圈遍歷資料
-  console.log('seeds 資料的連線')
+  console.log('seeds 準備進入 for 迴圈')
   for (let i = 0; i < rawData.results.length; i++) {
     Restaurant.create({
       name: rawData.results[i].name,
